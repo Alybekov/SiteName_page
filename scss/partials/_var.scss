@@ -1,0 +1,30 @@
+$fonts: 'Source Sans Pro',
+sans-serif;
+$red: #e84c3d;
+$yellow: #fdbd1f;
+$green: #1bbc9b;
+$purple: #9b58b5;
+
+@mixin extra-large {
+    @media screen and (max-width: 1247px) {
+        @content
+    }
+}
+
+@mixin large {
+    @media screen and (max-width: 850px) {
+        @content
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 600px) {
+        @content
+    }
+}
+
+@mixin small {
+    @media screen and (max-width: 560px) {
+        @content
+    }
+}

@@ -1,0 +1,86 @@
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -75px;
+}
+
+.blocks-item {
+    width: 27%;
+    text-align: center;
+    padding: 58px 138px 56px 138px;
+
+    @include extra-large {
+        width: 100%;
+        padding: 52px 50px 56px 50px;
+    }
+}
+
+.first-block {
+    background: $red;
+}
+
+.second-block {
+    background: $yellow;
+}
+
+.third-block {
+    background: $green;
+}
+
+.fourth-block {
+    background: $purple;
+}
+
+.blocks-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 29px;
+    text-transform: uppercase;
+    display: inline-block;
+
+    @include tablet {
+        font-size: 25px;
+    }
+}
+
+.block-title {
+    margin: 0 0 5px 0;
+    font-weight: 400;
+}
+
+.blocks-link::before {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 54px;
+    margin: 0px auto 23px;
+    padding: 22px;
+    border-radius: 50%;
+}
+
+.first-block-link::before {
+    background: url(../images/blocks-sprite.png) -124px -124px no-repeat #fff;
+}
+
+.second-block-link::before {
+    background: url(../images/blocks-sprite.png) -50px -53px no-repeat #fff;
+}
+
+.third-block-link::before {
+    background: url(../images/blocks-sprite.png) 16px 11px no-repeat #fff;
+}
+
+.fourth-block-link::before {
+    background: url(../images/blocks-sprite.png) -198px -201px no-repeat #fff;
+}
+
+.block-subtitle {
+    color: #fff;
+    font-family: $fonts;
+    margin: 0;
+
+    @include tablet {
+        font-size: 15px;
+    }
+}
